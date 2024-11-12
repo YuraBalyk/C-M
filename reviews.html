@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cleaning Services</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241112223721">
+	<link rel="shortcut icon" href="img/header/logonew.webp">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__containe">
+				<a href="index1.html" class="header__logo"><img src="img/header/logon.svg" alt=""></a>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="cooperation.html" class="menu__link">Cooperation</a></li>
+							<li class="menu__item"><a href="reviews.html" class="menu__link">Reviews</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
+							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+							<!-- пункти меню які з'являються в бургері -->
+							<li class="menu__item hidden"><a href="" data-popup="#popup" class="menu__link menu__link-btn-get">Get a quote</a></li>
+						</ul>
+						<div class="menu__social social">
+							<ul class="social__list">
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/tik_tok.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/instagram.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/facebook.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/whatsapp.svg" alt=""></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<button type="button" class="header__button-call button-call" data-popup="#popup">
+					<img src="img/header/Call.svg" alt="">
+					Call Us
+				</button>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+
+					<div class="popup__form-wrap">
+						<h1 class="popup__title">Your date</h1>
+
+						<div class="popup__form-img"><img src="img/form/01.svg" alt="Image"></div>
+
+						<form class="popup__form form-call form" method="POST" action="sendmail.php" data-ajax="sendmail.php">
+							<input type="text" name="form" class="form-call__input" placeholder="Name" required>
+							<input type="tel" name="phone" class="form-call__input" placeholder="Phone number" required>
+
+							<label class="form-call__checkbox">
+								<input checked type="radio" name="contact" value="Call me" class="options-form__input">
+								<span class="options-form__text">Call me</span>
+							</label>
+
+							<label class="form-call__checkbox">
+								<input type="radio" name="contact" value="Write to me on WhatsApp" class="options-form__input">
+								<span class="options-form__text">Write to me on WhatsApp</span>
+							</label>
+
+							<div class="form-call__checkbox">
+								<input type="radio" name="contact" value="Write to me on Instagram" class="options-form__input">
+								<span class="options-form__text">Write to me on Instagram</span>
+							</div>
+
+							<input type="text" name="username" class="form-call__input" placeholder="Username" required>
+
+							<p class="popup__description">By clicking the “Order a call” button, you agree to the <span><a href="">processing of personal data</a></span></p>
+							<button class="form-call__button button" type="submit">Order a call</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- ggggg -->
+
+
+		<main class="page-reviews">
+
+			<!-- ------------------------------- Our results ----------------------------------------------- -->
+
+			<section class="page-reviews__reviews-clients">
+				<div class="reviews-clients__container">
+					<h3 class="reviews__title title">What our <br> customers say</h3>
+					<div data-showmore="items" class="reviews-clients__wrap">
+						<ul data-showmore-content class="reviews-clients__content">
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+
+							<li class="reviews-clients__item">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__quotes-top">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__text">
+										<p>
+											They cleaned my townhouse today and did a fantastic job!!
+											Washrooms were deep cleaned. Even my shower caddies were
+											washed out and organized! Carpets were thoroughly vacuumed,
+											my appliances were sparkling, and my floors were clean and bright.
+											The house just felt fresh and clean!! I'll definitely
+											be calling them for my future cleanings! Well done
+											Valentina and Andrew!
+										</p>
+									</div>
+									<div class="slide-reviews__quotes-bottom">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+											<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+										</svg>
+									</div>
+									<div class="slide-reviews__sourse">Source: Facebook</div>
+								</div>
+							</li>
+						</ul>
+
+						<button hidden data-showmore-button type="button" class="reviews-clients__more">
+							<span>Show all</span>
+							<span>Collapse</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- ------------------------------- Our results ----------------------------------------------- -->
+
+			<section class="page-reviews__results results-reviews">
+				<div class="results-reviews__container">
+
+					<div class="residential__results results">
+						<h3 class="results__title title">Our results</h3>
+
+						<div class="results__content">
+							<div class="results__slider swiper">
+								<div class="results__wrapper swiper-wrapper">
+
+									<div class="results__slide slide-results swiper-slide">
+										<h4 class="slide-results__title">Sofa cleaning</h4>
+										<div class="slide-results__wrap">
+											<div class="slide-results__before before-slide">
+												<div class="before-slide__img">
+													<img src="img/services/upholstery/results/01.webp" alt="Image">
+												</div>
+												<h4 class="before-slide__description">Before</h4>
+											</div>
+											<div class="slide-results__after after-slide">
+												<div class="after-slide__img">
+													<img src="img/services/upholstery/results/02.webp" alt="Image">
+												</div>
+												<h4 class="after-slide__description">After</h4>
+											</div>
+										</div>
+									</div>
+
+									<div class="results__slide slide-results swiper-slide">
+										<h4 class="slide-results__title">Sofa cleaning</h4>
+										<div class="slide-results__wrap">
+											<div class="slide-results__before before-slide">
+												<div class="before-slide__img">
+													<img src="img/services/upholstery/results/001.webp" alt="Image">
+												</div>
+												<h4 class="before-slide__description">Before</h4>
+											</div>
+											<div class="slide-results__after after-slide">
+												<div class="after-slide__img">
+													<img src="img/services/upholstery/results/002.webp" alt="Image">
+												</div>
+												<h4 class="after-slide__description">After</h4>
+											</div>
+										</div>
+									</div>
+
+									<div class="results__slide slide-results swiper-slide">
+										<h3 class="slide-results__title">Sofa cleaning</h3>
+										<div class="slide-results__wrap">
+											<div class="slide-results__before before-slide">
+												<div class="before-slide__img">
+													<img src="img/services/upholstery/results/03.webp" alt="Image">
+												</div>
+												<h4 class="before-slide__description">Before</h4>
+											</div>
+											<div class="slide-results__after after-slide">
+												<div class="after-slide__img">
+													<img src="img/services/upholstery/results/04.webp" alt="Image">
+												</div>
+												<h4 class="after-slide__description">After</h4>
+											</div>
+										</div>
+									</div>
+
+									<div class="results__slide slide-results swiper-slide">
+										<h3 class="slide-results__title">Chair cleaning</h3>
+										<div class="slide-results__wrap">
+											<div class="slide-results__before before-slide">
+												<div class="before-slide__img">
+													<img src="img/services/upholstery/results/003.webp" alt="Image">
+												</div>
+												<h4 class="before-slide__description">Before</h4>
+											</div>
+											<div class="slide-results__after after-slide">
+												<div class="after-slide__img">
+													<img src="img/services/upholstery/results/004.webp" alt="Image">
+												</div>
+												<h4 class="after-slide__description">After</h4>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<!-- Якщо потрібна пагінація -->
+								<div class="swiper-pagination"></div>
+								<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+								<button type="button" class="swiper-button-prev"></button>
+								<button type="button" class="swiper-button-next"></button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__decor">
+					<img src="img/footer/Decor.svg" alt="decor">
+				</div>
+				<div class="footer__decor-mini">
+					<img src="img/footer/Decor-mini.svg" alt="decor-mini">
+				</div>
+
+				<div class="footer__top top-footer">
+					<div class="top-footer__partner partner-footer">
+						<div class="partner-footer__logo">
+							<img src="img/footer/logo-footer.svg" alt="">
+						</div>
+						<p class="partner-footer__text">Your reliable partner in maintaining <br> cleanliness and order</p>
+					</div>
+
+					<div class="top-footer__menu1 menu1-footer">
+						<ul class="menu1-footer__list">
+							<li class="menu1-footer__item"><a href="about.html" class="menu1-footer__link">About Us</a></li>
+							<li class="menu1-footer__item"><a href="services.html" class="menu1-footer__link">Services</a></li>
+							<li class="menu1-footer__item"><a href="cooperation.html" class="menu1-footer__link">Cooperation</a></li>
+							<li class="menu1-footer__item"><a href="reviews.html" class="menu1-footer__link">Reviews</a></li>
+							<li class="menu1-footer__item"><a href="contacts.html" class="menu1-footer__link">Contacts</a></li>
+							<li class="menu1-footer__item"><a href="faq.html" class="menu1-footer__link">FAQ</a></li>
+						</ul>
+					</div>
+
+					<div class="top-footer__menu2 menu2-footer">
+						<ul class="menu2-footer__list">
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Residential cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Commercial cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Carpet cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Upholstery cleaning</a></li>
+						</ul>
+					</div>
+
+					<div class="top-footer__info info-footer">
+						<div class="info-footer__contacts contacts-footer">
+							<p class="contacts-footer__text">Working hours schedule</p>
+							<p class="contacts-footer__work-hours">08:00 AM- 20:00 PM</p>
+							<p class="contacts-footer__tel"><a href="tel:5875739307">587-573-9307</a></p>
+						</div>
+
+						<button type="button" class="info-footer__button-call button-call" data-popup="#popup">
+							<img src="img/header/Call.svg" alt="">
+							Call Us
+						</button>
+					</div>
+				</div>
+
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__slogan slogan-footer">
+						<img src="img/footer/slogan.svg" alt="" class="slogan-footer__img">
+						<p class="slogan-footer__text">“Cleaning&Moving”, 2024</p>
+					</div>
+					<div class="bottom-footer__media media-footer">
+						<h2 class="media-footer__title">Write to us</h2>
+						<ul class="media-footer__list">
+							<li class="media-footer__item"><a href="https://www.tiktok.com/@cleaningmovingcalgary?_t=8qCTRWCVu8k&_r=1" target="blank" class="media-footer__link"><img src="img/footer/tik_tok.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="blank" class="media-footer__link"><img src="img/footer/instagram.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://www.facebook.com/share/ZxKqvmpSy1yYyH2X/?mibextid=JRoKGi" target="blank" class="media-footer__link"><img src="img/footer/facebook.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://wa.me/15875739404" target="blank" class="media-footer__link"><img src="img/footer/whatsapp.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241112223721"></script>
+</body>
+
+</html>

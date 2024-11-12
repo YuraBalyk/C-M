@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cleaning Services</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241112223721">
+	<link rel="shortcut icon" href="img/header/logonew.webp">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__containe">
+				<a href="index1.html" class="header__logo"><img src="img/header/logon.svg" alt=""></a>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="cooperation.html" class="menu__link">Cooperation</a></li>
+							<li class="menu__item"><a href="reviews.html" class="menu__link">Reviews</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
+							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+							<!-- пункти меню які з'являються в бургері -->
+							<li class="menu__item hidden"><a href="" data-popup="#popup" class="menu__link menu__link-btn-get">Get a quote</a></li>
+						</ul>
+						<div class="menu__social social">
+							<ul class="social__list">
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/tik_tok.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/instagram.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/facebook.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/whatsapp.svg" alt=""></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<button type="button" class="header__button-call button-call" data-popup="#popup">
+					<img src="img/header/Call.svg" alt="">
+					Call Us
+				</button>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+
+					<div class="popup__form-wrap">
+						<h1 class="popup__title">Your date</h1>
+
+						<div class="popup__form-img"><img src="img/form/01.svg" alt="Image"></div>
+
+						<form class="popup__form form-call form" method="POST" action="sendmail.php" data-ajax="sendmail.php">
+							<input type="text" name="form" class="form-call__input" placeholder="Name" required>
+							<input type="tel" name="phone" class="form-call__input" placeholder="Phone number" required>
+
+							<label class="form-call__checkbox">
+								<input checked type="radio" name="contact" value="Call me" class="options-form__input">
+								<span class="options-form__text">Call me</span>
+							</label>
+
+							<label class="form-call__checkbox">
+								<input type="radio" name="contact" value="Write to me on WhatsApp" class="options-form__input">
+								<span class="options-form__text">Write to me on WhatsApp</span>
+							</label>
+
+							<div class="form-call__checkbox">
+								<input type="radio" name="contact" value="Write to me on Instagram" class="options-form__input">
+								<span class="options-form__text">Write to me on Instagram</span>
+							</div>
+
+							<input type="text" name="username" class="form-call__input" placeholder="Username" required>
+
+							<p class="popup__description">By clicking the “Order a call” button, you agree to the <span><a href="">processing of personal data</a></span></p>
+							<button class="form-call__button button" type="submit">Order a call</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- ggggg -->
+
+
+		<main class="page__about about">
+			<!-- _______________________________________ family __________________________________________ -->
+			<section class="about__family family">
+				<div class="family__containe">
+					<div class="family__photo">
+						<img src="img/about/01.webp" alt="Image">
+					</div>
+					<div class="family__text text-family">
+						<h2 class="text-family__title title">About us</h2>
+						<div class="text-family__description">
+							<p>
+								We are a young family from Ukraine. We moved to Calgary in 2023,
+								and we fell in love with this city, this country, the people, and the nature.
+							</p>
+							<p>
+								Over the past year in Canada, we've experienced different seasons and emotions: happiness,
+								joy, peace, and now we want to bring these emotions into your homes.
+							</p>
+						</div>
+						<div class="text-family__text">
+							<p>
+								- We create coziness through cleanliness <br>
+								- We care about your health by creating a clean environment <br>
+								- We assist you with the moving process, relieving you from stress
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- _______________________________________ owners __________________________________________ -->
+
+			<section class="about__owners owners">
+				<div class="owners__container">
+					<div class="owners__text text-owners">
+						<div class="text-owners__content">
+
+							<div class="text-owners__quotes-top">
+								<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+									<path d="M15.2767 57.7367C11.8433 54.09 10 50 10 43.37C10 31.7033 18.19 21.2467 30.1 16.0767L33.0767 20.67C21.96 26.6833 19.7867 34.4867 18.92 39.4067C20.71 38.48 23.0533 38.1567 25.35 38.37C31.3633 38.9267 36.1033 43.8633 36.1033 50C36.1033 53.0942 34.8742 56.0616 32.6862 58.2496C30.4983 60.4375 27.5309 61.6667 24.4367 61.6667C22.7255 61.6517 21.0345 61.2965 19.4619 60.6218C17.8893 59.9471 16.4666 58.9664 15.2767 57.7367ZM48.61 57.7367C45.1767 54.09 43.3333 50 43.3333 43.37C43.3333 31.7033 51.5233 21.2467 63.4333 16.0767L66.41 20.67C55.2933 26.6833 53.12 34.4867 52.2533 39.4067C54.0433 38.48 56.3867 38.1567 58.6833 38.37C64.6967 38.9267 69.4367 43.8633 69.4367 50C69.4367 53.0942 68.2075 56.0616 66.0196 58.2496C63.8317 60.4375 60.8642 61.6667 57.77 61.6667C56.0589 61.6517 54.3678 61.2965 52.7952 60.6218C51.2226 59.9471 49.8 58.9664 48.61 57.7367Z" fill="#8FC4C8" />
+								</svg>
+							</div>
+
+							<div class="text-owners__text">
+								<p>
+									We understand that your time is the most valuable resource, so our mission is
+									to free you from everyday worries and help you focus on important matters.
+
+								</p>
+								<p>
+									Let us take care of household duties and ensure impeccable cleanliness and comfort for you.
+								</p>
+							</div>
+
+							<div class="text-owners__quotes-bottom">
+								<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+									<path d="M64.7233 22.2633C68.1567 25.91 70 30 70 36.63C70 48.2967 61.81 58.7533 49.9 63.9233L46.9233 59.33C58.04 53.3167 60.2133 45.5133 61.08 40.5933C59.29 41.52 56.9467 41.8433 54.65 41.63C48.6367 41.0733 43.8967 36.1367 43.8967 30C43.8967 26.9058 45.1258 23.9383 47.3138 21.7504C49.5017 19.5625 52.4691 18.3333 55.5633 18.3333C57.2745 18.3483 58.9656 18.7035 60.5381 19.3782C62.1107 20.0529 63.5334 21.0336 64.7233 22.2633ZM31.39 22.2633C34.8233 25.91 36.6667 30 36.6667 36.63C36.6667 48.2967 28.4767 58.7533 16.5667 63.9233L13.59 59.33C24.7067 53.3167 26.88 45.5133 27.7467 40.5933C25.9567 41.52 23.6133 41.8433 21.3167 41.63C15.3033 41.0733 10.5633 36.1367 10.5633 30C10.5633 26.9058 11.7925 23.9383 13.9804 21.7504C16.1683 19.5625 19.1358 18.3333 22.23 18.3333C23.9411 18.3483 25.6322 18.7035 27.2048 19.3782C28.7774 20.0528 30.2 21.0336 31.39 22.2633Z" fill="#8FC4C8" />
+								</svg>
+							</div>
+						</div>
+
+						<div class="text-owners__sign">@ Owners Andrew & Valentina</div>
+
+
+
+					</div>
+
+					<div class="owners__photo">
+						<img src="img/about/02.webp" alt="Image">
+					</div>
+				</div>
+			</section>
+
+			<!-- _______________________________________ instagram __________________________________________ -->
+
+			<section class="contacts__insta insta">
+				<div class="insta__container">
+
+					<div class="insta__video video-insta">
+						<a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="_blank" class="video-insta__item-big"><img src="img/contact/insta/01.webp" alt="Image"></a>
+
+						<div class="video-insta__item-small item-small">
+							<a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="_blank" class="item-small__video"><img src="img/contact/insta/02.webp" alt="Image"></a>
+							<a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="_blank" class="item-small__video"><img src="img/contact/insta/03.webp" alt="Image"></a>
+						</div>
+					</div>
+
+					<div class="insta__content content-insta">
+						<h3 class="content-insta__title title">We are on <br> Instagram</h3>
+
+						<div class="content-insta__text">
+							<p>
+								Here we are always in touch, sharing cleaning life hacks,
+								and showing real-time results of our work. <br>
+								Follow us to stay updated and not miss news and useful information.
+							</p>
+						</div>
+
+						<div class="content-insta__action action-insta">
+							<a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="_blank" class="action-insta__button">Click to join</a>
+							<div class="action-insta__img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+									<path d="M24 28.2C21.75 28.2 19.8 26.4 19.8 24C19.8 21.75 21.6 19.8 24 19.8C26.25 19.8 28.2 21.6 28.2 24C28.2 26.25 26.25 28.2 24 28.2Z" fill="#759EA0" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M29.1 13.8H18.9C17.7 13.95 17.1 14.1 16.65 14.25C16.05 14.4 15.6 14.7 15.15 15.15C14.7939 15.5061 14.6257 15.8622 14.4223 16.2926C14.3687 16.406 14.3126 16.5249 14.25 16.65C14.2268 16.7196 14.2 16.7928 14.1713 16.8713C14.0144 17.3 13.8 17.8856 13.8 18.9V29.1C13.95 30.3 14.1 30.9 14.25 31.35C14.4 31.95 14.7 32.4 15.15 32.85C15.5061 33.2061 15.8622 33.3743 16.2926 33.5777C16.4061 33.6313 16.5248 33.6874 16.65 33.75C16.7196 33.7732 16.7928 33.8 16.8713 33.8287C17.3 33.9856 17.8856 34.2 18.9 34.2H29.1C30.3 34.05 30.9 33.9 31.35 33.75C31.95 33.6 32.4 33.3 32.85 32.85C33.2061 32.4939 33.3743 32.1378 33.5777 31.7074C33.6313 31.5939 33.6874 31.4752 33.75 31.35C33.7732 31.2804 33.8 31.2072 33.8287 31.1287C33.9856 30.7 34.2 30.1144 34.2 29.1V18.9C34.05 17.7 33.9 17.1 33.75 16.65C33.6 16.05 33.3 15.6 32.85 15.15C32.4939 14.7939 32.1378 14.6257 31.7074 14.4223C31.5941 14.3688 31.475 14.3125 31.35 14.25C31.2804 14.2268 31.2072 14.2 31.1287 14.1713C30.7 14.0144 30.1144 13.8 29.1 13.8ZM24 17.55C20.4 17.55 17.55 20.4 17.55 24C17.55 27.6 20.4 30.45 24 30.45C27.6 30.45 30.45 27.6 30.45 24C30.45 20.4 27.6 17.55 24 17.55ZM32.1 17.4C32.1 18.2284 31.4284 18.9 30.6 18.9C29.7716 18.9 29.1 18.2284 29.1 17.4C29.1 16.5716 29.7716 15.9 30.6 15.9C31.4284 15.9 32.1 16.5716 32.1 17.4Z" fill="#759EA0" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM18.9 11.55H29.1C30.45 11.7 31.35 11.85 32.1 12.15C33 12.6 33.6 12.9 34.35 13.65C35.1 14.4 35.55 15.15 35.85 15.9C36.15 16.65 36.45 17.55 36.45 18.9V29.1C36.3 30.45 36.15 31.35 35.85 32.1C35.4 33 35.1 33.6 34.35 34.35C33.6 35.1 32.85 35.55 32.1 35.85C31.35 36.15 30.45 36.45 29.1 36.45H18.9C17.55 36.3 16.65 36.15 15.9 35.85C15 35.4 14.4 35.1 13.65 34.35C12.9 33.6 12.45 32.85 12.15 32.1C11.85 31.35 11.55 30.45 11.55 29.1V18.9C11.7 17.55 11.85 16.65 12.15 15.9C12.6 15 12.9 14.4 13.65 13.65C14.4 12.9 15.15 12.45 15.9 12.15C16.65 11.85 17.55 11.55 18.9 11.55Z" fill="#759EA0" />
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-insta__action action-insta-mobile">
+						<a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="_blank" class="action-insta__button">Click to join</a>
+						<div class="action-insta__img">
+							<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+								<path d="M24 28.2C21.75 28.2 19.8 26.4 19.8 24C19.8 21.75 21.6 19.8 24 19.8C26.25 19.8 28.2 21.6 28.2 24C28.2 26.25 26.25 28.2 24 28.2Z" fill="#759EA0" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M29.1 13.8H18.9C17.7 13.95 17.1 14.1 16.65 14.25C16.05 14.4 15.6 14.7 15.15 15.15C14.7939 15.5061 14.6257 15.8622 14.4223 16.2926C14.3687 16.406 14.3126 16.5249 14.25 16.65C14.2268 16.7196 14.2 16.7928 14.1713 16.8713C14.0144 17.3 13.8 17.8856 13.8 18.9V29.1C13.95 30.3 14.1 30.9 14.25 31.35C14.4 31.95 14.7 32.4 15.15 32.85C15.5061 33.2061 15.8622 33.3743 16.2926 33.5777C16.4061 33.6313 16.5248 33.6874 16.65 33.75C16.7196 33.7732 16.7928 33.8 16.8713 33.8287C17.3 33.9856 17.8856 34.2 18.9 34.2H29.1C30.3 34.05 30.9 33.9 31.35 33.75C31.95 33.6 32.4 33.3 32.85 32.85C33.2061 32.4939 33.3743 32.1378 33.5777 31.7074C33.6313 31.5939 33.6874 31.4752 33.75 31.35C33.7732 31.2804 33.8 31.2072 33.8287 31.1287C33.9856 30.7 34.2 30.1144 34.2 29.1V18.9C34.05 17.7 33.9 17.1 33.75 16.65C33.6 16.05 33.3 15.6 32.85 15.15C32.4939 14.7939 32.1378 14.6257 31.7074 14.4223C31.5941 14.3688 31.475 14.3125 31.35 14.25C31.2804 14.2268 31.2072 14.2 31.1287 14.1713C30.7 14.0144 30.1144 13.8 29.1 13.8ZM24 17.55C20.4 17.55 17.55 20.4 17.55 24C17.55 27.6 20.4 30.45 24 30.45C27.6 30.45 30.45 27.6 30.45 24C30.45 20.4 27.6 17.55 24 17.55ZM32.1 17.4C32.1 18.2284 31.4284 18.9 30.6 18.9C29.7716 18.9 29.1 18.2284 29.1 17.4C29.1 16.5716 29.7716 15.9 30.6 15.9C31.4284 15.9 32.1 16.5716 32.1 17.4Z" fill="#759EA0" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM18.9 11.55H29.1C30.45 11.7 31.35 11.85 32.1 12.15C33 12.6 33.6 12.9 34.35 13.65C35.1 14.4 35.55 15.15 35.85 15.9C36.15 16.65 36.45 17.55 36.45 18.9V29.1C36.3 30.45 36.15 31.35 35.85 32.1C35.4 33 35.1 33.6 34.35 34.35C33.6 35.1 32.85 35.55 32.1 35.85C31.35 36.15 30.45 36.45 29.1 36.45H18.9C17.55 36.3 16.65 36.15 15.9 35.85C15 35.4 14.4 35.1 13.65 34.35C12.9 33.6 12.45 32.85 12.15 32.1C11.85 31.35 11.55 30.45 11.55 29.1V18.9C11.7 17.55 11.85 16.65 12.15 15.9C12.6 15 12.9 14.4 13.65 13.65C14.4 12.9 15.15 12.45 15.9 12.15C16.65 11.85 17.55 11.55 18.9 11.55Z" fill="#759EA0" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__decor">
+					<img src="img/footer/Decor.svg" alt="decor">
+				</div>
+				<div class="footer__decor-mini">
+					<img src="img/footer/Decor-mini.svg" alt="decor-mini">
+				</div>
+
+				<div class="footer__top top-footer">
+					<div class="top-footer__partner partner-footer">
+						<div class="partner-footer__logo">
+							<img src="img/footer/logo-footer.svg" alt="">
+						</div>
+						<p class="partner-footer__text">Your reliable partner in maintaining <br> cleanliness and order</p>
+					</div>
+
+					<div class="top-footer__menu1 menu1-footer">
+						<ul class="menu1-footer__list">
+							<li class="menu1-footer__item"><a href="about.html" class="menu1-footer__link">About Us</a></li>
+							<li class="menu1-footer__item"><a href="services.html" class="menu1-footer__link">Services</a></li>
+							<li class="menu1-footer__item"><a href="cooperation.html" class="menu1-footer__link">Cooperation</a></li>
+							<li class="menu1-footer__item"><a href="reviews.html" class="menu1-footer__link">Reviews</a></li>
+							<li class="menu1-footer__item"><a href="contacts.html" class="menu1-footer__link">Contacts</a></li>
+							<li class="menu1-footer__item"><a href="faq.html" class="menu1-footer__link">FAQ</a></li>
+						</ul>
+					</div>
+
+					<div class="top-footer__menu2 menu2-footer">
+						<ul class="menu2-footer__list">
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Residential cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Commercial cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Carpet cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Upholstery cleaning</a></li>
+						</ul>
+					</div>
+
+					<div class="top-footer__info info-footer">
+						<div class="info-footer__contacts contacts-footer">
+							<p class="contacts-footer__text">Working hours schedule</p>
+							<p class="contacts-footer__work-hours">08:00 AM- 20:00 PM</p>
+							<p class="contacts-footer__tel"><a href="tel:5875739307">587-573-9307</a></p>
+						</div>
+
+						<button type="button" class="info-footer__button-call button-call" data-popup="#popup">
+							<img src="img/header/Call.svg" alt="">
+							Call Us
+						</button>
+					</div>
+				</div>
+
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__slogan slogan-footer">
+						<img src="img/footer/slogan.svg" alt="" class="slogan-footer__img">
+						<p class="slogan-footer__text">“Cleaning&Moving”, 2024</p>
+					</div>
+					<div class="bottom-footer__media media-footer">
+						<h2 class="media-footer__title">Write to us</h2>
+						<ul class="media-footer__list">
+							<li class="media-footer__item"><a href="https://www.tiktok.com/@cleaningmovingcalgary?_t=8qCTRWCVu8k&_r=1" target="blank" class="media-footer__link"><img src="img/footer/tik_tok.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="blank" class="media-footer__link"><img src="img/footer/instagram.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://www.facebook.com/share/ZxKqvmpSy1yYyH2X/?mibextid=JRoKGi" target="blank" class="media-footer__link"><img src="img/footer/facebook.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://wa.me/15875739404" target="blank" class="media-footer__link"><img src="img/footer/whatsapp.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241112223721"></script>
+</body>
+
+</html>

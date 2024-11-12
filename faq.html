@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cleaning Services</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241112223721">
+	<link rel="shortcut icon" href="img/header/logonew.webp">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__containe">
+				<a href="index1.html" class="header__logo"><img src="img/header/logon.svg" alt=""></a>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="cooperation.html" class="menu__link">Cooperation</a></li>
+							<li class="menu__item"><a href="reviews.html" class="menu__link">Reviews</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
+							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+							<!-- пункти меню які з'являються в бургері -->
+							<li class="menu__item hidden"><a href="" data-popup="#popup" class="menu__link menu__link-btn-get">Get a quote</a></li>
+						</ul>
+						<div class="menu__social social">
+							<ul class="social__list">
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/tik_tok.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/instagram.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/facebook.svg" alt=""></a></li>
+								<li class="social__item hidden"><a href="" class="social__link"><img src="img/header/social/whatsapp.svg" alt=""></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<button type="button" class="header__button-call button-call" data-popup="#popup">
+					<img src="img/header/Call.svg" alt="">
+					Call Us
+				</button>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+
+					<div class="popup__form-wrap">
+						<h1 class="popup__title">Your date</h1>
+
+						<div class="popup__form-img"><img src="img/form/01.svg" alt="Image"></div>
+
+						<form class="popup__form form-call form" method="POST" action="sendmail.php" data-ajax="sendmail.php">
+							<input type="text" name="form" class="form-call__input" placeholder="Name" required>
+							<input type="tel" name="phone" class="form-call__input" placeholder="Phone number" required>
+
+							<label class="form-call__checkbox">
+								<input checked type="radio" name="contact" value="Call me" class="options-form__input">
+								<span class="options-form__text">Call me</span>
+							</label>
+
+							<label class="form-call__checkbox">
+								<input type="radio" name="contact" value="Write to me on WhatsApp" class="options-form__input">
+								<span class="options-form__text">Write to me on WhatsApp</span>
+							</label>
+
+							<div class="form-call__checkbox">
+								<input type="radio" name="contact" value="Write to me on Instagram" class="options-form__input">
+								<span class="options-form__text">Write to me on Instagram</span>
+							</div>
+
+							<input type="text" name="username" class="form-call__input" placeholder="Username" required>
+
+							<p class="popup__description">By clicking the “Order a call” button, you agree to the <span><a href="">processing of personal data</a></span></p>
+							<button class="form-call__button button" type="submit">Order a call</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- ggggg -->
+
+
+		<main class="faq">
+
+			<!-- ----------------------------------- questions ---------------------------------------------------- -->
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<h1 class="questions__title title">You often ask us <br> about this</h1>
+
+					<div data-tabs data-tabs-animate class="questions-tabs">
+						<nav data-tabs-titles class="questions-tabs__navigation">
+							<button type="button" class="questions-tabs__title _tab-active">Price and Payments</button>
+							<button type="button" class="questions-tabs__title">Cleaning</button>
+							<button type="button" class="questions-tabs__title">Upholstery</button>
+							<button type="button" class="questions-tabs__title">Security and Standards</button>
+						</nav>
+						<div data-tabs-body class="questions-tabs__content">
+							<div class="questions-tabs__body">
+								<div data-spollers data-one-spoller class="questions-spollers">
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>When is the service payment due?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">After the completion of the service.</div>
+									</details>
+
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title">
+											<p>How can I find out the cost of my cleaning service?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">You can use the approximate automatic calculation on the "order service" page or contact the manager directly for an individual estimate.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Can I cancel the service order, and how can I do it?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Yes, we can cancel or reschedule your order, but please notify us at least two hours before the agreed-upon time, or as soon as possible for the best assistance.</div>
+									</details>
+
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title">
+											<p>What are the payment options?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Cash or bank transfer (e-transfer).</div>
+									</details>
+
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title">
+											<p>What will the price for the moving depend on?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">The price for the moving service is fixed at $60 per hour for two workers, so it will depend on the additional services, the length of the route, and the number of trips, as these factors affect the total time.</div>
+									</details>
+
+
+								</div>
+							</div>
+
+							<div class="questions-tabs__body">
+								<div data-spollers data-one-spoller class="questions-spollers">
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Yes, you can order specific additional services without booking a general cleaning.</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Certainly, we can perform any additional service separately, or discuss your individual preferences for cleaning.</div>
+									</details>
+
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title">
+											<p>Do you provide cleaning after renovation or moving out?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Yes, we have a specific type of deep cleaning that works well for both general cleaning and post-move cleaning.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>What cleaning products do you use?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">We use professional cleaning agents and equipment that effectively remove dirt and ensure a high standard of cleanliness. Our products are safe and environmentally friendly, providing efficient cleaning while preserving the health of our clients and the environment.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Do you bring all the equipment with you, or do I need to provide something for you?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">We have all the necessary supplies and equipment for cleaning. If you have specific preferences regarding the use of certain products or tools, we will take them into account.</div>
+									</details>
+
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>In which cities do you clean?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Currently, we operate only in the city of Calgary and its surrounding areas, but in the future, we plan to expand our service coverage across all of Canada.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>How many people usually come for cleaning?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Two cleaners.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>How much time does cleaning usually take?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">It depends on the number of rooms, bathrooms, the level of dirt, and the quantity of additional services. On average, it takes between 3 to 6 hours.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Can specific details or areas that require special attention be specified?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Certainly, when placing your order, we will take into account all additional preferences. You can also discuss them directly on-site during the cleaning.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>How do you handle complaints or customer dissatisfaction?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Your feedback is crucial to us, so we respond to it promptly and are always ready to be accountable for the work we've done.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Do you clean commercial properties and offices?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Yes, we offer such a service, and the terms and pricing are discussed individually with each client.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Is my presence required during the cleaning?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">According to your preference. We can discuss all the cleaning details in advance, and you can attend to your own affairs while we professionally handle the cleaning.</div>
+									</details>
+
+
+
+
+
+								</div>
+							</div>
+
+							<div class="questions-tabs__body">
+								<div data-spollers data-one-spoller class="questions-spollers">
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Is the cleaning price inclusive of treating all parts of the furniture (legs, cushions, etc.) in dry cleaning?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">All details that belong to a sofa or chair, such as cushions and the like, are included in the price.</div>
+									</details>
+
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Can a specific stain be removed?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Yes, we have a separate service for removing both large and small stains.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>What materials and products do you use for dry cleaning? Are they safe for my furniture and health?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">We use professional cleaning agents and equipment that effectively remove dirt and ensure a high standard of cleanliness. Our products are safe and environmentally friendly, providing efficient cleaning while preserving the health of our clients and the environment.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Are there any specific restrictions or recommendations after the dry cleaning procedure?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">No, you can use your furniture as usual after the cleaning procedure.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>What tips can you provide for the ongoing care of furniture after dry cleaning?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Keep various liquids away from furniture: try to avoid spills of drinks and other liquids on the furniture. If they do spill, treat the stain as quickly as possible.
+											<br>
+											<br>
+											<b>Regularly remove dust and dirt:</b> use a soft brush or vacuum cleaner for regular dust and dirt removal. This will help maintain the fresh appearance of the furniture. <br>
+											<b>Use specialized cleaning products:</b> use manufacturer-recommended furniture cleaning products. Avoid using aggressive abrasive substances. <br>
+											<b>Protect from sunlight:</b> furniture can lose color due to the impact of sunlight. Use curtains or blinds to protect from direct sunlight. <br>
+											<b>Stain removal:</b> if a stain occurs, use a small amount of clean water or a recommended stain removal product. Avoid aggressive chemical substances. <br>
+											<b>Maintain proper humidity levels:</b> avoid extremely high or low humidity levels, as they can affect the condition of the furniture.
+										</div>
+									</details>
+
+
+
+
+
+
+								</div>
+							</div>
+
+							<div class="questions-tabs__body">
+								<div data-spollers data-one-spoller class="questions-spollers">
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>How do you screen your workers before hiring them?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">All our workers are vetted individuals close to us who undergo interviews, training, and trial cleanings before providing the main services for orders.</div>
+									</details>
+									<details class="questions-spollers__item">
+										<summary class="questions-spollers__title" aria-expanded="false">
+											<p>Does your company have the necessary licenses and certificates?</p>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+												<path d="M16.7249 23.2401L27.3449 12.0941C27.5222 11.9081 27.6211 11.661 27.6211 11.4041C27.6211 11.1472 27.5222 10.9001 27.3449 10.7141L27.3329 10.7021C27.247 10.6116 27.1435 10.5396 27.0288 10.4904C26.9142 10.4411 26.7907 10.4157 26.6659 10.4157C26.5411 10.4157 26.4176 10.4411 26.303 10.4904C26.1883 10.5396 26.0848 10.6116 25.9989 10.7021L15.9989 21.1981L6.0029 10.7021C5.91695 10.6116 5.8135 10.5396 5.69884 10.4904C5.58417 10.4411 5.46069 10.4157 5.3359 10.4157C5.21112 10.4157 5.08763 10.4411 4.97297 10.4904C4.8583 10.5396 4.75485 10.6116 4.6689 10.7021L4.6569 10.7141C4.47961 10.9001 4.38071 11.1472 4.38071 11.4041C4.38071 11.661 4.47961 11.9081 4.6569 12.0941L15.2769 23.2401C15.3703 23.3381 15.4826 23.4162 15.6071 23.4695C15.7315 23.5228 15.8655 23.5503 16.0009 23.5503C16.1363 23.5503 16.2703 23.5228 16.3947 23.4695C16.5192 23.4162 16.6315 23.3381 16.7249 23.2401Z" fill="#21212F" />
+											</svg>
+										</summary>
+										<div class="questions-spollers__body">Yes, we operate fully legally and in accordance with Canadian laws regarding the provision of commercial services.</div>
+									</details>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="questions__manager manager-questions">
+						<div class="manager-questions__text">
+							<p>
+								If you haven't found answers to your questions, our manager
+								is ready to personally respond to it quickly and with care!
+							</p>
+						</div>
+						<button class="manager-questions__button" data-popup="#popup">
+							<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+								<path d="M2.16699 9.89843C2.16699 15.1667 6.52199 17.9736 9.70916 20.4869C10.8337 21.3731 11.917 22.2083 13.0003 22.2083C14.0837 22.2083 15.167 21.3742 16.2915 20.4858C19.4797 17.9747 23.8337 15.1667 23.8337 9.89951C23.8337 4.63126 17.8753 0.894845 13.0003 5.96051C8.12533 0.893762 2.16699 4.63018 2.16699 9.89843Z" fill="#8FC4C8" />
+							</svg>
+							<p>
+								Ask a Question
+							</p>
+						</button>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__decor">
+					<img src="img/footer/Decor.svg" alt="decor">
+				</div>
+				<div class="footer__decor-mini">
+					<img src="img/footer/Decor-mini.svg" alt="decor-mini">
+				</div>
+
+				<div class="footer__top top-footer">
+					<div class="top-footer__partner partner-footer">
+						<div class="partner-footer__logo">
+							<img src="img/footer/logo-footer.svg" alt="">
+						</div>
+						<p class="partner-footer__text">Your reliable partner in maintaining <br> cleanliness and order</p>
+					</div>
+
+					<div class="top-footer__menu1 menu1-footer">
+						<ul class="menu1-footer__list">
+							<li class="menu1-footer__item"><a href="about.html" class="menu1-footer__link">About Us</a></li>
+							<li class="menu1-footer__item"><a href="services.html" class="menu1-footer__link">Services</a></li>
+							<li class="menu1-footer__item"><a href="cooperation.html" class="menu1-footer__link">Cooperation</a></li>
+							<li class="menu1-footer__item"><a href="reviews.html" class="menu1-footer__link">Reviews</a></li>
+							<li class="menu1-footer__item"><a href="contacts.html" class="menu1-footer__link">Contacts</a></li>
+							<li class="menu1-footer__item"><a href="faq.html" class="menu1-footer__link">FAQ</a></li>
+						</ul>
+					</div>
+
+					<div class="top-footer__menu2 menu2-footer">
+						<ul class="menu2-footer__list">
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Residential cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Commercial cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Carpet cleaning</a></li>
+							<li class="menu2-footer__item"><a href="" class="menu2-footer__link">Upholstery cleaning</a></li>
+						</ul>
+					</div>
+
+					<div class="top-footer__info info-footer">
+						<div class="info-footer__contacts contacts-footer">
+							<p class="contacts-footer__text">Working hours schedule</p>
+							<p class="contacts-footer__work-hours">08:00 AM- 20:00 PM</p>
+							<p class="contacts-footer__tel"><a href="tel:5875739307">587-573-9307</a></p>
+						</div>
+
+						<button type="button" class="info-footer__button-call button-call" data-popup="#popup">
+							<img src="img/header/Call.svg" alt="">
+							Call Us
+						</button>
+					</div>
+				</div>
+
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__slogan slogan-footer">
+						<img src="img/footer/slogan.svg" alt="" class="slogan-footer__img">
+						<p class="slogan-footer__text">“Cleaning&Moving”, 2024</p>
+					</div>
+					<div class="bottom-footer__media media-footer">
+						<h2 class="media-footer__title">Write to us</h2>
+						<ul class="media-footer__list">
+							<li class="media-footer__item"><a href="https://www.tiktok.com/@cleaningmovingcalgary?_t=8qCTRWCVu8k&_r=1" target="blank" class="media-footer__link"><img src="img/footer/tik_tok.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://www.instagram.com/cleaning_services_canada/?next=%2F" target="blank" class="media-footer__link"><img src="img/footer/instagram.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://www.facebook.com/share/ZxKqvmpSy1yYyH2X/?mibextid=JRoKGi" target="blank" class="media-footer__link"><img src="img/footer/facebook.svg" alt=""></a></li>
+							<li class="media-footer__item"><a href="https://wa.me/15875739404" target="blank" class="media-footer__link"><img src="img/footer/whatsapp.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241112223721"></script>
+</body>
+
+</html>
